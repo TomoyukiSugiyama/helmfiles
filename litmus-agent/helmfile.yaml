@@ -1,0 +1,11 @@
+repositories:
+  - name: litmuschaos
+    url: https://litmuschaos.github.io/litmus-helm/
+
+releases:
+  - name: litmus-agent
+    namespace: litmus
+    chart: litmuschaos/litmus-agent
+    version: 3.9.0
+    values:
+      - values.yaml
