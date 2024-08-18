@@ -1,0 +1,11 @@
+repositories:
+  - name: litmuschaos
+    url: https://litmuschaos.github.io/litmus-helm/
+
+releases:
+  - name: litmus
+    namespace: litmus
+    chart: litmuschaos/litmus
+    version: 3.9.0
+    values:
+      - values.yaml
