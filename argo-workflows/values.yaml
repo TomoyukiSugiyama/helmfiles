@@ -56,7 +56,7 @@ workflow:
   namespace:
   serviceAccount:
     # -- Specifies whether a service account should be created
-    create: false
+    create: true
     # -- Labels applied to created service account
     labels: {}
     # -- Annotations applied to created service account
@@ -199,8 +199,9 @@ controller:
   # -- Default values that will apply to all Workflows from this controller, unless overridden on the Workflow-level.
   # Only valid for 2.7+
   ## See more: https://argo-workflows.readthedocs.io/en/stable/default-workflow-specs/
-  workflowDefaults: {}
-  #   spec:
+  workflowDefaults:
+    spec:
+      serviceAccountName: "argo-workflow"
   #     ttlStrategy:
   #       secondsAfterCompletion: 86400
   #     # Ref: https://argo-workflows.readthedocs.io/en/stable/artifact-repository-ref/
