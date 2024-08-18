@@ -6,6 +6,6 @@ releases:
   - name: litmus-agent
     namespace: litmus
     chart: litmuschaos/litmus-agent
-    version: 3.9.0
+    version: 3.8.1
     values:
       - values.yaml
