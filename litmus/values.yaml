@@ -15,7 +15,7 @@ allowedOrigins: ".*"
 
 adminConfig:
   VERSION: "3.10.0"
-  SKIP_SSL_VERIFY: "false"
+  SKIP_SSL_VERIFY: "true"
   # -- leave empty if uses Mongo DB deployed by this chart
   DBPASSWORD: ""
   DBUSER: ""
