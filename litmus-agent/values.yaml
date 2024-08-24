@@ -24,7 +24,7 @@ SKIP_SSL: "true"
 PLATFORM_NAME: "Others"
 
 LITMUS_URL: "http://litmus-frontend-service.litmus.svc.cluster.local:9091"
-LITMUS_BACKEND_URL: "http://litmus-server-service.litmus.svc.cluster.local:9092"
+LITMUS_BACKEND_URL: "http://litmus-server-service.litmus.svc.cluster.local:9002"
 LITMUS_USERNAME: "admin"
 LITMUS_PASSWORD: "litmus"
 LITMUS_PROJECT_ID: ""
