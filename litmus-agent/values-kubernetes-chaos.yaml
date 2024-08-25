@@ -1,0 +1,34 @@
+# Default values for kubernetes
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: "k8s"
+fullnameOverride: "k8s"
+
+# -- Additional labels
+customLabels: {}
+
+image:
+  litmus:
+    repository: litmuschaos.docker.scarf.sh/litmuschaos/ansible-runner
+    tag: 3.8.0
+    pullPolicy: Always
+
+  litmusGO:
+    repository: litmuschaos.docker.scarf.sh/litmuschaos/go-runner
+    tag: 3.8.0
+    pullPolicy: Always
+
+  litmusLIBImage:
+    repository: litmuschaos.docker.scarf.sh/litmuschaos/go-runner
+    tag: 3.8.0
+
+environment:
+  # supported: 'docker', 'containerd', 'crio'
+  runtime: 'docker'
+
+  # ex: '/var/run/docker.sock', '/run/containerd/containerd.sock', '/run/crio/crio.sock'
+  socketPath: '/var/run/docker.sock'
+
+experiments:
+  disabled: []

@@ -9,3 +9,9 @@ releases:
     version: 3.8.1
     values:
       - values.yaml
+  - name: kubernetes-chaos
+    namespace: litmus
+    chart: litmuschaos/kubernetes-chaos
+    version: 3.8.0
+    values:
+      - values-kubernetes-chaos.yaml
