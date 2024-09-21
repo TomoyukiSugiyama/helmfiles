@@ -6,6 +6,6 @@ releases:
   - name: litmus
     namespace: litmus
     chart: litmuschaos/litmus
-    version: 3.10.0
+    version: 3.11.0
     values:
       - values.yaml
